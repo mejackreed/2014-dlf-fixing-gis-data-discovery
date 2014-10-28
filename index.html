@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fixing GIS Data Discovery</title>
+
+		<meta name="description" content="Fixing GIS Data Discovery - Introducing GeoBlacklight | A presentation at 2014 FOSS4G, Portland OR">
+		<meta name="author" content="Jack Reed">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1>Fixing GIS Data Discovery</h1>
+					<h3>Introducing GeoBlacklight</h3>
+					<p>
+						<small>Jack Reed / <a href="http://twitter.com/mejackreed">@mejackreed</a></small>
+					</p>
+					<p>
+						<small>Stanford University Libraries</small>
+					</p>
+					<small>
+						<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+					</small>
+				</section>
+				
+				<section>
+					<h1>Geospatial data preservation and discovery is broken</h1>
+				</section>
+				
+				<section>
+					<img src='images/cds.jpg'>
+				</section>
+				
+				<section>
+					<h2>Hours of user interviews</h2>
+					<h4>Students, instructors, researchers, experts, librarians, government agencies</h4>
+				</section>
+				
+				<section>
+					
+					<section>
+						<h2>Environmental scan</h2>
+					</section>
+					
+					<section>
+						<img src='images/evaluation.png' class='no-img-effects'>
+					</section>
+					
+					<section>
+						<img src='images/features.png' class='no-img-effects'>
+					</section>
+					
+				</section>
+				
+				<section>
+					<section>
+						<h2>Development of a metadata schema</h2>
+						<h4><a href='https://github.com/geoblacklight/geoblacklight-schema'>GeoBlacklight-Schema</a></h4>
+						<p>
+							Hardy, D., K. Durante. 2014. <a href='http://journal.code4lib.org/articles/9710'>A Metadata Schema for Geospatial Resource Discovery Use Cases</a>. code4lib 25.
+						</p>
+					</section>
+					<section>
+						<h3>Complimentary to other projects:</h3>
+						<ul>
+							<li>
+								reusing a controlled vocabulary from the FOSS4G CatInterop project
+							</li>
+							<li>
+								crosswalk from ISO 19115/19139 and FGDC (and ArcGIS)
+							</li>
+							<li>
+								conversion from OpenGeoportal Metadata
+							</li>
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<img src='images/personas.png' class='no-img-effects'>
+					</section>
+					<section>
+						<img src='images/brian.png' class='no-img-effects'>
+					</section>
+					<section>
+						<img src='images/andrea.png' class='no-img-effects'>
+					</section>
+					<section>
+						<img src='images/sandip.png' class='no-img-effects'>
+					</section>
+					<section>
+						<img src='images/beverly.png' class='no-img-effects'>
+					</section>
+					<section>
+						<img src='images/brandon.png' class='no-img-effects'>
+					</section>
+					<section>
+						<img src='images/debra.png' class='no-img-effects'>
+					</section>
+					
+				</section>
+				
+				<section>
+					<img src='images/process.png' class='no-img-effects'>
+				</section>
+				
+				<section>
+					<h3>Current software offerings don't match institutional objectives</h3>
+				</section>
+				
+				<section>
+					<h2>Focus on discovery</h2>
+					<h2>Leave out analysis</h2>
+				</section>
+				
+				<section>
+					<img src='images/project.png' class='no-img-effects full-width'>
+				</section>
+				
+				<section>
+					<img src='images/swstack.png' class='no-img-effects'>
+				</section>
+				
+				<section>
+					<h3>
+						<a href='http://geoblacklight.org'>http://geoblacklight.org</a>
+					</h3>
+				</section>
+				
+				<section>
+					<h2>Thanks!</h2>
+					<h3>Pull requests welcome :)</h3>
+				</section>
+				
+			</div>
+			
+			<footer>
+				<!-- <small><a href='http://bit.ly/foss4g2014jack'>http://bit.ly/foss4g2014jack</a></small> -->
+			</footer>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+	</body>
+</html>
